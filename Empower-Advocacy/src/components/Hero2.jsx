@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/logo.webp'
-import background from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background9.webp'
+import background from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background12.webp'
 const Hero2 = () => {
   return (
     <section>
-  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 bg-beige ">
+  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24  ">
     <div class="flex flex-wrap items-center mx-auto max-w-7xl">
       <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
         <div>
