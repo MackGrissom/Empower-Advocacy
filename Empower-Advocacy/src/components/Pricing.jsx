@@ -7,7 +7,7 @@ const services = [
         subtitle: 'Expert Guidance',
         description: "Navigating special education can be overwhelming. If you feel intimidated, confused, or unhappy with your child's experience in special education then please reach out for a free consult. We will listen to your story and give you professional advice on your next steps.",
         icon: <FaChalkboardTeacher />,
-        price: "Free",
+        price: "30 Min / Free",
         priceClass: "'hidden'",
         href: '#',
     },
@@ -85,8 +85,9 @@ const Pricing = () => {
                         <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
                             {services.map((service) => (
                                 <div key={service.name} className="flex flex-col rounded-3xl bg-beige shadow-xl ring-1 ring-black/10 transform transition duration-500 hover:scale-110 hover:bg-white hover:text-gn hover:shadow-lg group pb-5">
+                                    <a href={service.href}>
                                     <div className="p-8 sm:p-10">
-                                        <h3 className="text-2xl font-semibold leading-8 tracking-tight text-indigo-600" id={service.id}>
+                                        <h3 className="text-3xl font-semibold leading-8 tracking-tight " id={service.id}>
                                             {service.icon}
                                             {service.name}
                                         </h3>
@@ -94,19 +95,20 @@ const Pricing = () => {
                                             {service.subtitle}
                                         </h2>
                                         <p className="mt-6 text-md bold leading-7 text-gray-600 mb-5">{service.description}</p>
-                                        <div className="absolute right-[0]  text-l tracking-widest text-white uppercase transition-opacity transform  bg-gn bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full">
+                                        <div className="absolute right-[0]  text-l tracking-widest text-black uppercase transition-opacity transform   bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full top-0">
+                                            {service.price}
                                             <a
                                                 href={service.href}
-                                                className="inline-block w-[70%] bottom-4 absolute rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700 mt-10 p-10 hover:bg-black hover:text-white"
+                                                className="inline-block w-[70%] bottom-8 absolute rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md  mt-10 p-10 hover:bg-black"
                                                 aria-describedby={service.id}
                                             >
-                                                Get started: &nbsp;
-                                             {service.price}
+                                                Get started
                                             </a>
 
                                         </div>
 
                                     </div>
+                                </a>
                                 </div>
                             ))}
                         </div>
@@ -114,9 +116,9 @@ const Pricing = () => {
                 </div>
                 <div className="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-md lg:max-w-4xl">
-                        <div className="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
+                        <div className="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gn bg-beige sm:p-10 lg:flex-row lg:items-center lg:gap-8">
                             <div className="lg:min-w-0 lg:flex-1">
-                                <h3 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Resources</h3>
+                                <h3 className="text-lg font-semibold leading-8 tracking-tight ">Resources</h3>
                                 <div className="mt-2 text-base leading-7 text-gray-600">
                                     Do you want answers to common questions regarding the special education process? Do you want to advocate for yourself but need resources? Our resource page is a great place to start! All clients will get access to this page however if you do not feel you need an advocate these resources may be a great place to start. <span className="font-semibold text-gray-900">$20 Unlimited Access</span>.
                                 </div>
@@ -124,7 +126,7 @@ const Pricing = () => {
                             <div>
                                 <a
                                     href="#"
-                                    className="inline-block rounded-lg bg-beige px-4 py-2.5 text-center text-sm font-semibold leading-5 text-black hover:bg-indigo-100"
+                                    className="inline-block rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white hover:bg-indigo-100 hover:bg-black"
                                 >
                                     Contact Us For Details &nbsp; &nbsp; <span aria-hidden="true">&rarr;</span>
                                 </a>

@@ -4,12 +4,12 @@ import Hero from './components/Hero'
 
 
 import Contact from './components/Contact'
-import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import About from './About'
 import Hero2 from './components/Hero2'
 import Pricing from './components/Pricing'
+import Reviews from './components/Reviews'
 function App() {
 
 
@@ -20,6 +20,7 @@ function App() {
 <About /> 
 
 <Testimonials/> 
+<Reviews />
 <Contact />
 <Footer /> 
 

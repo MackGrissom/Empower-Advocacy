@@ -11,7 +11,7 @@ black:'black'
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio')
+    require('@tailwindcss/aspect-ratio','@tailwindcss/typography', '@tailwindcss/forms')
 ]
 }
 
