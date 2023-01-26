@@ -1,6 +1,6 @@
 import React from 'react'
-import katie from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/katie.webp'
-import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background8.webp'
+import katie from '/src/assets/images/katie.webp'
+import bg from '/src/assets/images/background8.webp'
 const About = () => {
     return (
 

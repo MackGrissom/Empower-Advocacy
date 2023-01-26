@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/logo.webp'
-import background from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background12.webp'
+import logo from '/src/assets/images/logo.webp'
+import background from '/src/assets/images/background12.webp'
 
 const Hero2 = () => {
   return (

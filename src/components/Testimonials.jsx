@@ -1,6 +1,6 @@
-import brittany from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/brittany.webp'
-import Reviews from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/components/Reviews.jsx'
-import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background8.webp'
+import brittany from '/src/assets/brittany.webp'
+import Reviews from '/src/components/Reviews.jsx'
+import bg from '/src/assets/images/background8.webp'
 export default function Testimonials() {
   return (
     <>

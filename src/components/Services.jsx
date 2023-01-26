@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaChalkboardTeacher, AiOutlineFileSearch, GiShakingHands, RiTeamLine, GrResources } from 'react-icons/all'
 
-import consultation from "/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/consultation.webp"
-import files from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/files.webp'
-import collaboration from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/collaboration.webp'
-import meeting from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/meeting.webp'
+import consultation from "/src/assets/images/consultation.webp"
+import files from '/src/assets/images/files.webp'
+import collaboration from '/src/assets/images/collaboration.webp'
+import meeting from '/src/assets/images/meeting.webp'
 
 
 import { Fragment } from 'react'

@@ -1,4 +1,4 @@
-import logo from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/logo.webp'
+import logo from '/src/assets/images/logo.webp'
 const navigation = {
   main: [
     { name: 'About', href: '#about' },
