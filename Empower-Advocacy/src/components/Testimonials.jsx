@@ -30,7 +30,7 @@ export default function Testimonials() {
 
 
 
-    <section className="overflow-hidden bg-beige mt-30" id='testimonials'>
+    <section className="overflow-hidden  mt-30 max-w-full " id='testimonials'>
       <div className="relative mx-auto max-w-7xl px-6 pt-40 pb-12 lg:px-8 ">
         <svg
           className="absolute top-full left-0 translate-x-80 -translate-y-24 transform lg:hidden"
@@ -78,7 +78,7 @@ export default function Testimonials() {
           <rect width={404} height={784} fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)" />
         </svg>
 
-        <div className="relative lg:flex lg:items-center bg-beige">
+        <div className="relative lg:flex lg:items-center b">
           <div className="hidden lg:block lg:flex-shrink-0">
             <img
               className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
