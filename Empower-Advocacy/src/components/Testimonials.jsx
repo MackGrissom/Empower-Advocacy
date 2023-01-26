@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <>
 {/* title of testimonials */}
-<div className="relative bg-indigo-800 mt-10 pt-0" id='testimonials'>
+{/* <div className="relative bg-indigo-800 mt-10 pt-0 " id='testimonials'>
       <div className="absolute inset-0">
         <img
           className="h-full w-full object-cover"
@@ -20,7 +20,7 @@ export default function Testimonials() {
           Hear What Our Valued Clients Have To Say About Working With Us
         </p>
       </div>
-    </div>
+    </div> */}
 
 
 
@@ -30,8 +30,8 @@ export default function Testimonials() {
 
 
 
-    <section className="overflow-hidden bg-beige">
-      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-12 lg:px-8 lg:py-20">
+    <section className="overflow-hidden bg-beige mt-30" id='testimonials'>
+      <div className="relative mx-auto max-w-7xl px-6 pt-40 pb-12 lg:px-8 ">
         <svg
           className="absolute top-full left-0 translate-x-80 -translate-y-24 transform lg:hidden"
           width={784}
