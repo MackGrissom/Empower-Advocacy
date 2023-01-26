@@ -1,44 +1,43 @@
 
 import ReactDOM from 'react-dom/client';
 
-
+import { BrowserRouter } from 'react-router-dom';
 
 import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import About from './components/About'
 import Hero from './components/Hero'
-import Pricing from './components/Pricing'
+import Services from './components/Services'
 import Reviews from './components/Reviews'
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { HashLink as Link} from 'react-router-hash-link'
 function App() {
 
 
   return (
-    <Routes>
-        <Route path='/' element={ <Hero /> } />
-        <Route path='/about' element={ <About /> } />
-        <Route path='/pricing' element={ <Pricing /> }/>
-        <Route path='/services' element={ <Pricing /> }/>
-        <Route path='/testimonials' element={ <Testimonials /> }/>
-        <Route path='/reviews' element={ <Reviews /> }/>
-        <Route path='/contact' element={ <Contact /> }/>
+    <BrowserRouter>
+<div className="app">
 
-      </Routes>
+      <Hero /> <Link to='/'/>
+      <About /> <Link to='#about'/>
+      <Services /> <Link to='#services'/> 
+      <Contact /> <Link to='#contact'/> 
+      <Testimonials /> <Link to='#testimonials'/> 
+     
 
+      </div>
 
-
-      
-      // <Hero />
-      // <About />
-      // <Pricing />
-      // <Testimonials />
-      // <Reviews />
-      // <Contact />
-      // <Footer />
+    </BrowserRouter>
 
 
-    
+// <Navbar />
+//     <App />
+    // <Footer />
+ 
+
+
+
   )
 }
 

@@ -9,7 +9,7 @@ const Hero2 = () => {
    
    
     <section>
-  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 h-[100vh]  ">
+  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 h-[100vh]  " >
     <div class="flex flex-wrap items-center mx-auto max-w-7xl">
       <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
         <div>

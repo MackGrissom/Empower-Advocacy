@@ -17,8 +17,8 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export default function Contact() {
   return (
 
-<>
-    <div className="relative bg-beige ">
+<div id='contact'>
+    <div className="relative bg-beige " >
       
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 bg-beige" />
@@ -129,6 +129,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   )
 }

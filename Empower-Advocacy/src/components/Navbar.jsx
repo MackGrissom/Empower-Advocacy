@@ -3,13 +3,15 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/logo.webp'
 
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-white shadow">
+        <Disclosure as="nav" className=" shadow sticky top-0 z-50 bg-beige
+        " id='#hero'>
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -29,32 +31,31 @@ export default function Navbar() {
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gn hover:border-gray-300 hover:text-gray-700" */}
-                                    <a
-                                        href="/"
-                                        className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
-                                    >
+                                    <a href="/"
+                                        className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">
+                                    
                                        Home
-                                    </a>
+                                       </a>
                                     <a
-                                        href="/services"
+                                        href="#services"
                                         className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gn hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Services
                                     </a>
                                     <a
-                                        href="/contact"
+                                        href="#contact"
                                         className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gn hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Contact
                                     </a>
                                     <a
-                                        href="/about"
+                                        href="#about"
                                         className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gn hover:border-gray-300 hover:text-gray-700"
                                     >
                                        About
                                     </a>
                                     <a
-                                        href="/testimonials"
+                                        href="#testimonials"
                                         className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gn hover:border-gray-300 hover:text-gray-700"
                                     >
                                        Testimonials
@@ -113,7 +114,7 @@ export default function Navbar() {
                                 <div className="flex-shrink-0">
                                     <img
                                         className="h-10 w-10 rounded-full"
-                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auhref=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                         alt=""
                                     />
                                 </div>

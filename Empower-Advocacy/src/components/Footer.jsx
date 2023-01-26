@@ -1,10 +1,10 @@
 import logo from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/logo.webp'
 const navigation = {
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Contact', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Testimonials', href: '#' },
+    { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#contact' },
+    { name: 'Services', href: '#services' },
+    { name: 'Testimonials', href: '#testimonials' },
   ],
   social: [
     {
@@ -39,7 +39,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-beige border-t border-gn border-dotted">
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {navigation.main.map((item) => (
