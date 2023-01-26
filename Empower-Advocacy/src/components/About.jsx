@@ -6,10 +6,10 @@ const About = () => {
 
         <>
 
-        <div class="container mt-20 px-6 mx-auto" id='about' >
+        <div class="container mt-40 mb-0 px-6 mx-auto" id='about' >
 
 
-            <section class="mb-32 text-gray-800 text-center lg:text-left ">
+            <section class="mb-0 text-gray-800 text-center lg:text-left ">
                 <div class="block rounded-lg shadow-lg bg-white">
                     <div class="flex flex-wrap items-center">
                         <div class="block w-full lg:flex grow-0 shrink-0 basis-auto lg:w-6/12 xl:w-4/12 ">

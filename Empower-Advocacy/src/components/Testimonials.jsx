@@ -1,11 +1,11 @@
 import brittany from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/brittany.webp'
 import Reviews from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/components/Reviews.jsx'
-import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background11.webp'
+import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background8.webp'
 export default function Testimonials() {
   return (
     <>
 {/* title of testimonials */}
-<div className="relative bg-indigo-800" id='testimonials'>
+<div className="relative bg-indigo-800 mt-10 pt-0" id='testimonials'>
       <div className="absolute inset-0">
         <img
           className="h-full w-full object-cover"
@@ -14,7 +14,7 @@ export default function Testimonials() {
         />
         <div className="absolute inset-0 bg-gn mix-blend-multiply" aria-hidden="true" />
       </div>
-      <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8">
+      <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 mt-0">
         <h1 className="text-4xl font-bold tracking-tight text-beige sm:text-5xl lg:text-6xl">Client Testimonials</h1>
         <p className="mt-6 max-w-3xl text-xl text-white">
           Hear What Our Valued Clients Have To Say About Working With Us

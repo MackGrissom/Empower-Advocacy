@@ -21,9 +21,9 @@ function App() {
 
       <Hero /> <Link to='/'/>
       <Services /> <Link to='#services'/> 
-      <Contact /> <Link to='#contact'/> 
       <About /> <Link to='#about'/>
       <Testimonials /> <Link to='#testimonials'/> 
+      <Contact /> <Link to='#contact'/> 
      
 
       </div>

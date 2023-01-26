@@ -18,16 +18,13 @@ export default function Navbar() {
                         <div className="flex h-16 justify-between">
                             <div className="flex">
                                 <div className="flex flex-shrink-0 items-center">
+                                    <a href='/'>
                                     <img
                                         className="block h-8 w-auto lg:hidden"
                                         src={logo}
                                         alt="Your Company"
                                     />
-                                    <img
-                                        className="hidden h-8 w-auto lg:block"
-                                        src={logo}
-                                        alt="Your Company"
-                                    />
+                                   </a>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gn hover:border-gray-300 hover:text-gray-700" */}
@@ -83,34 +80,34 @@ export default function Navbar() {
                             <Disclosure.Button
                                 as="a"
                                 href="/"
-                                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
+                                className="block border-l-4 border-gn bg-beige py-2 pl-3 pr-4 text-base font-medium text-gn"
                             >
                                Home
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="a"
-                                href="services"
+                                href="#services"
                                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gn hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                             >
                                 Services
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="a"
-                                href="contact"
+                                href="#contact"
                                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gn hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                             >
                                Contact
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="a"
-                                href="About"
+                                href="#about"
                                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gn hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                             >
                                About
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="a"
-                                href="About"
+                                href="#testimonials"
                                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gn hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                             >
                                Testimonial
