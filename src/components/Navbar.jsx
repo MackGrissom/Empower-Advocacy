@@ -25,6 +25,16 @@ export default function Navbar() {
                                         alt="Your Company"
                                     />
                                    </a>
+
+                                   
+                                    <a href='/'>
+                                    <img
+                                        className="hidden h-8 w-auto lg:block"
+                                        src={logo}
+                                        alt="Your Company"
+                                    />
+                                   </a>
+
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gn hover:border-gray-300 hover:text-gray-700" */}
