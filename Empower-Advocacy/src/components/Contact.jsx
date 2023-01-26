@@ -16,53 +16,54 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function Contact() {
   return (
-    <div className="relative bg-white">
+
+<>
+    <div className="relative bg-beige ">
+      
       <div className="absolute inset-0">
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 bg-beige" />
       </div>
-      <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-        <div className="bg-gray-50 py-16 px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
-          <div className="mx-auto max-w-lg">
+      <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5   ">
+        <div className="bg-gray-50 py-16 px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12 bg-beige">
+          <div className="mx-auto max-w-lg bg-beige ">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Get in touch</h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-              arcu.
+            If you'd like to book a free 30 minutes consultation, gain access to critical resources or have any general questions - please reach out below. We look forward to hearing from you!
             </p>
             <dl className="mt-8 text-base text-gray-500">
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>742 Evergreen Terrace</p>
-                  <p>Springfield, OR 12345</p>
+                  <p>Based In Senoia, Georgia</p>
                 </dd>
               </div>
               <div className="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <PhoneIcon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <span className="ml-3">+1 (404)-421-3696</span>
                 </dd>
               </div>
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">support@example.com</span>
+                  <span className="ml-3"><a href='mailto:katie@empoweradvocacygroup.com'>katie@empoweradvocacygroup.com</a></span>
                 </dd>
               </div>
             </dl>
-            <p className="mt-6 text-base text-gray-500">
-              Looking for careers?{' '}
-              <a href="#" className="font-medium text-gray-700 underline">
-                View all job openings
+            <p className="mt-6 text-sm text-gray-500">
+              Need A Professional Website?{' '}
+              <a href="https://www.mackgrissom.io" className="font-medium text-gray-700 underline">
+                Contact Our Developer
               </a>
               .
             </p>
           </div>
         </div>
-        <div className="bg-white py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+        <div className="bg-white py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12 bg-beige">
           <div className="mx-auto max-w-lg lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 ">
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
@@ -118,7 +119,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 bg-gn "
                 >
                   Submit
                 </button>
@@ -128,5 +129,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   )
 }

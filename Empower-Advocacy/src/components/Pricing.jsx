@@ -58,6 +58,10 @@ const Pricing = () => {
 
 
         <div className="">
+           
+   
+  
+
             <div className="relative overflow-hidden pt-32 pb-96 lg:pt-40">
                 <div>
                     <img
@@ -68,12 +72,12 @@ const Pricing = () => {
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                        <h2 className="text-lg font-semibold leading-8 text-black">Our Services </h2>
-                        <p className="mt-2 text-4xl font-bold tracking-tight text-white">
+                        <h2 className="text-5xl font-semibold leading-8 text-beige">Our Services </h2>
+                        <p className="mt-2 text-4xl font-bold tracking-tight text-gn">
                             Expertise. Collaboration. Support. <br className="hidden sm:inline lg:hidden" />
 
                         </p>
-                        <p className="mt-6 text-lg leading-8 text-black">
+                        <p className="mt-6 text-lg leading-8 text-white">
                             Empower Advocacy advocates for your child to receive the services they need to be successful in school. <br /> We teach parents the tools needed to successfully advocate for their child..
                         </p>
                     </div>
@@ -95,7 +99,7 @@ const Pricing = () => {
                                             {service.subtitle}
                                         </h2>
                                         <p className="mt-6 text-md bold leading-7 text-gray-600 mb-5">{service.description}</p>
-                                        <div className="absolute right-[0]  text-l tracking-widest text-black uppercase transition-opacity transform   bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full top-0">
+                                        <div className="absolute right-[0]  text-xl font-semibold tracking-widest text-black uppercase transition-opacity transform   bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full top-4">
                                             {service.price}
                                             <a
                                                 href={service.href}

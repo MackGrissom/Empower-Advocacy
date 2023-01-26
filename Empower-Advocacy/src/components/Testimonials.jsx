@@ -1,7 +1,9 @@
 import school from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/school.webp'
-
+import Reviews from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/components/Reviews.jsx'
 export default function Testimonials() {
   return (
+    <>
+    
     <div className="bg-white pt-16 lg:py-24">
       <div className="bg-gn pb-16 lg:relative lg:z-10 lg:pb-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
@@ -46,5 +48,7 @@ export default function Testimonials() {
         </div>
       </div>
     </div>
+    <Reviews />
+    </>
   )
 }

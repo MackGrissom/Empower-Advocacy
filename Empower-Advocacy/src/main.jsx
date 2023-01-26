@@ -1,12 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import Navbar from './components/Navbar'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css'
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+root.render(
+  <BrowserRouter>
     <Navbar />
     <App />
-  </React.StrictMode>,
-)
+    <Footer />
+  </BrowserRouter>
+);
