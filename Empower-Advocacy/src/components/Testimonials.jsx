@@ -1,53 +1,130 @@
-import school from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/school.webp'
+import brittany from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/brittany.webp'
 import Reviews from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/components/Reviews.jsx'
+import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background11.webp'
 export default function Testimonials() {
   return (
     <>
-    
-    <div className="bg-white pt-16 lg:py-24" id='testimonials'>
-      <div className="bg-gn pb-16 lg:relative lg:z-10 lg:pb-0">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
-          <div className="relative lg:-my-8">
-            <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />
-            <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:h-full lg:p-0">
-              <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                <img
-                  className="object-cover lg:h-full lg:w-full"
-                  src={school}
-                  alt=""
-                />
-              </div>
-            </div>
+{/* title of testimonials */}
+<div className="relative bg-indigo-800" id='testimonials'>
+      <div className="absolute inset-0">
+        <img
+          className="h-full w-full object-cover"
+          src={bg}
+          alt=""
+        />
+        <div className="absolute inset-0 bg-gn mix-blend-multiply" aria-hidden="true" />
+      </div>
+      <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8">
+        <h1 className="text-4xl font-bold tracking-tight text-beige sm:text-5xl lg:text-6xl">Client Testimonials</h1>
+        <p className="mt-6 max-w-3xl text-xl text-white">
+          Hear What Our Valued Clients Have To Say About Working With Us
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section className="overflow-hidden bg-beige">
+      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-12 lg:px-8 lg:py-20">
+        <svg
+          className="absolute top-full left-0 translate-x-80 -translate-y-24 transform lg:hidden"
+          width={784}
+          height={404}
+          fill="none"
+          viewBox="0 0 784 404"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32"
+              x={0}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x={0} y={0} width={4} height={4} className="text-gn" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width={784} height={404} fill="" />
+        </svg>
+
+        <svg
+          className="absolute right-full top-1/2 hidden translate-x-1/2 -translate-y-1/2 transform lg:block text-gn"
+          width={404}
+          height={784}
+          fill="none"
+          viewBox="0 0 404 784"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="56409614-3d62-4985-9a10-7ca758a8f4f0"
+              x={0}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width={404} height={784} fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)" />
+        </svg>
+
+        <div className="relative lg:flex lg:items-center bg-beige">
+          <div className="hidden lg:block lg:flex-shrink-0">
+            <img
+              className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
+              src={brittany}
+              alt=""
+            />
           </div>
-          <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
-            <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0 lg:py-20">
-              <blockquote>
-                <div>
-                  <svg
-                    className="h-12 w-12 text-white opacity-25"
-                    fill="currentColor"
-                    viewBox="0 0 32 32"
-                    aria-hidden="true"
-                  >
-                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                  </svg>
-                  <p className="mt-6 text-m text-white">
-                    We hired Katie when our daughter was in Special Needs Preschool after talking with her about a situation that arose that seemed strange. Immediately she advised us on what to do in the situation, and then we hired her to look over all of our kiddo’s educational records and attend our IEP meetings. Being a first time parent with a child with special needs, it is very overwhelming to navigate the education system and know and understand your rights. Katie has helped us get the services we need, the accommodations that are appropriate and she is so helpful at helping us understand why we may need something that the school is suggesting, etc.
-<br/>
-<br/>
-                    Things finally got better once we as parents had a better understanding and we had the support of someone who knows the ins and outs of the law, and what we are entitled to ask for. We are so thankful to have Katie on our team, and also make sure to recommend her to anyone that we think can use her for any type of educational advocacy. Thanks Katie for making our lives “easier” when it comes to this! We’d be LOST without her!
-                  </p>
+
+          <div className="relative lg:ml-10">
+            <svg
+              className="absolute top-0 left-0 h-20 w-20 -translate-x-8 -translate-y-24 transform text-indigo-200 opacity-50"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 144 144"
+              aria-hidden="true"
+            >
+              <path
+                strokeWidth={2}
+                d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z"
+              />
+            </svg>
+            <blockquote className="relative">
+              <div className="text-l font-medium leading-9 text-gray-900 mt-8">
+                <p>
+                There are not enough words to describe how amazing Katie is at her job. She taught us how to advocate for our son, the ins and outs of an IEP, and how to be the voice for our child in the education system. We are now confident going into our  son’s IEP meetings because we understand the process clearly, and we know what is right vs wrong. Katie is not only amazing at her job, but she is loyal and trustworthy. We are honored to have Katie by our side for any future educational needs for our child."
+                </p>
+              </div>
+              <footer className="mt-8">
+                <div className="flex">
+                  <div className="flex-shrink-0 lg:hidden">
+                    <img
+                      className="h-12 w-12 rounded-full"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div className="ml-4 lg:ml-0">
+                    <div className="text-base font-medium text-gray-900">Brittany Phan</div>
+                  </div>
                 </div>
-                <footer className="mt-6">
-                  <p className="text-base font-medium text-white">Laura Lewis</p>
-                  
-                </footer>
-              </blockquote>
-            </div>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <Reviews />
     </>
   )

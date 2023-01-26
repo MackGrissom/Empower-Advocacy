@@ -1,8 +1,12 @@
 import React from 'react'
 import katie from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/katie.webp'
+import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/background8.webp'
 const About = () => {
     return (
-        <div class="container my-24 px-6 mx-auto" id='about'>
+
+        <>
+
+        <div class="container mt-20 px-6 mx-auto" id='about' >
 
 
             <section class="mb-32 text-gray-800 text-center lg:text-left ">
@@ -35,6 +39,7 @@ const About = () => {
 
 
         </div>
+        </>
     )
 }
 

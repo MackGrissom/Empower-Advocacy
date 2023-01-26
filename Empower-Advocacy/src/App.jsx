@@ -20,9 +20,9 @@ function App() {
 <div className="app">
 
       <Hero /> <Link to='/'/>
-      <About /> <Link to='#about'/>
       <Services /> <Link to='#services'/> 
       <Contact /> <Link to='#contact'/> 
+      <About /> <Link to='#about'/>
       <Testimonials /> <Link to='#testimonials'/> 
      
 

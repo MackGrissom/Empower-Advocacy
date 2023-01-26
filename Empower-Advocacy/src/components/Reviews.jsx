@@ -15,11 +15,13 @@ const reviews = {
       id: 1,
       rating: 5,
       content: `
-        <p>There are not enough words to describe how amazing Katie is at her job. She taught us how to advocate for our son, the ins and outs of an IEP, and how to be the voice for our child in the education system. We are now confident going into our  son’s IEP meetings because we understand the process clearly, and we know what is right vs wrong. Katie is not only amazing at her job, but she is loyal and trustworthy. We are honored to have Katie by our side for any future educational needs for our child. </p>
+        <p>We hired Katie when our daughter was in Special Needs Preschool after talking with her about a situation that arose that seemed strange. Immediately she advised us on what to do in the situation, and then we hired her to look over all of our kiddo’s educational records and attend our IEP meetings. Being a first time parent with a child with special needs, it is very overwhelming to navigate the education system and know and understand your rights. Katie has helped us get the services we need, the accommodations that are appropriate and she is so helpful at helping us understand why we may need something that the school is suggesting, etc.
+
+        Things finally got better once we as parents had a better understanding and we had the support of someone who knows the ins and outs of the law, and what we are entitled to ask for. We are so thankful to have Katie on our team, and also make sure to recommend her to anyone that we think can use her for any type of educational advocacy. Thanks Katie for making our lives “easier” when it comes to this! We’d be LOST without her! </p>
       `,
-      author: 'Brittany Phan',
+      author: 'Laura Lewis',
       avatarSrc:
-        'https://lh3.googleusercontent.com/a-/AD5-WCnv84KDVu1xpEhWmVmAsWqD-gQcntmj8-JX5wxm4w=w150-h150-p-rp-mo-br100',
+        'https://lh3.googleusercontent.com/a/AEdFTp7_mi_qHMcWXwvl2oNLc2QaFFPV9aAnOfY8g6qM=w150-h150-p-rp-mo-br100',
     },
     {
       id: 2,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaChalkboardTeacher, AiOutlineFileSearch, GiShakingHands, RiTeamLine, GrResources } from 'react-icons/all'
 import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/bg.svg'
+
 const services = [
     {
         name: 'Consultation',
@@ -9,7 +10,7 @@ const services = [
         icon: <FaChalkboardTeacher />,
         price: "30 Min / Free",
         priceClass: "'hidden'",
-        href: '#',
+        href: 'contact',
     },
     {
         name: 'Record Review',
@@ -18,7 +19,7 @@ const services = [
         icon: <AiOutlineFileSearch />,
         price: "$75/hr",
         priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
-        href: '#',
+        href: 'contact',
     },
     {
         name: 'Collaboration',
@@ -28,7 +29,7 @@ const services = [
         price: "$75/hr",
         priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
         priceNote: "",
-        href: '#',
+        href: 'contact',
     },
     {
         name: 'Attend Meetings',
@@ -38,7 +39,7 @@ const services = [
         price: "$100/hr",
         priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
         priceNote: "(plus mileage 20 miles outside of 30028)",
-        href: '#',
+        href: 'contact',
     },
 
 
@@ -58,10 +59,6 @@ const Pricing = () => {
 
 
         <div className="" id='services'>
-           
-   
-  
-
             <div className="relative overflow-hidden pt-32 pb-96 lg:pt-40">
                 <div>
                     <img
@@ -72,7 +69,7 @@ const Pricing = () => {
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                        <h2 className="text-5xl font-semibold leading-8 text-beige">Our Services </h2>
+                        <h2 className="text-5xl font-semibold leading-8 text-beige">What Services Do We Offer? </h2>
                         <p className="mt-2 text-4xl font-bold tracking-tight text-gn">
                             Expertise. Collaboration. Support. <br className="hidden sm:inline lg:hidden" />
 
@@ -84,35 +81,44 @@ const Pricing = () => {
                 </div>
             </div>
             <div className="flow-root pb-32 lg:pb-40">
-                <div className="relative -mt-80">
+                <div className="relative -mt-80 ">
                     <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
+                        <div className=" grid  grid-cols-2 gap-8 lg:max-w-full lg:grid-cols-2 lg:gap-8 ">
+
+
+
+
+
                             {services.map((service) => (
-                                <div key={service.name} className="flex flex-col rounded-3xl bg-beige shadow-xl ring-1 ring-black/10 transform transition duration-500 hover:scale-110 hover:bg-white hover:text-gn hover:shadow-lg group pb-5">
+                                <div key={service.name} className="flex flex-col rounded-3xl bg-beige shadow-xl ring-1 ring-black/10 transform transition duration-500 hover:scale-110 hover:bg-white hover:text-gn hover:shadow-lg group pb-5 flip-card">
                                     <a href={service.href}>
-                                    <div className="p-8 sm:p-10">
-                                        <h3 className="text-3xl font-semibold leading-8 tracking-tight " id={service.id}>
-                                            {service.icon}
-                                            {service.name}
-                                        </h3>
-                                        <h2 className="text-sm font-semibold font-italic leading-8 tracking-tight text-gray" id={service.id}>
-                                            {service.subtitle}
-                                        </h2>
-                                        <p className="mt-6 text-md bold leading-7 text-gray-600 mb-5">{service.description}</p>
-                                        <div className="absolute right-[0]  text-xl font-semibold tracking-widest text-black uppercase transition-opacity transform   bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full top-4">
-                                            {service.price}
-                                            <a
-                                                href={service.href}
-                                                className="inline-block w-[70%] bottom-8 absolute rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md  mt-10 p-10 hover:bg-black"
-                                                aria-describedby={service.id}
-                                            >
-                                                Get started
-                                            </a>
+                                        <div className="p- sm:p-10 flip-card-inner">
+                                            <h3 className="text-2xl font-semibold leading-8 tracking-tight flip-card-front" id={service.id}>
+                                                {service.icon}
+                                                
+                                            </h3>
+                                            <h3 className="text-2xl font-semibold leading-8 tracking-tight text-gn" id={service.id}>
+                                               
+                                                {service.name}
+                                            </h3>
+                                            <h2 className="text-sm font-semibold font-italic leading-8 tracking-tight text-gray" id={service.id}>
+                                                {service.subtitle}
+                                            </h2>
+                                            <p className="mt-6 text-md bold leading-7 text-gray-600 mb-5">{service.description}</p>
+                                            <div className="absolute right-[0]  text-xl font-semibold tracking-widest text-black uppercase transition-opacity transform   bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full top-4 flip-card-back">
+                                                {service.price}
+                                                <a
+                                                    href={service.href}
+                                                    className="inline-block w-[70%] bottom-2 absolute rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md  mt-10 p-10 hover:bg-black"
+                                                    aria-describedby={service.id}
+                                                >
+                                                    Contact For Details
+                                                </a>                                             
+
+                                            </div>
 
                                         </div>
-
-                                    </div>
-                                </a>
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -141,6 +147,7 @@ const Pricing = () => {
             </div>
         </div>
 
+    
 
     )
 }
