@@ -1,13 +1,15 @@
 import React from 'react'
 import { FaChalkboardTeacher, AiOutlineFileSearch, GiShakingHands, RiTeamLine, GrResources } from 'react-icons/all'
-
+import bg from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empower-Advocacy/src/assets/images/bg.svg'
 const services = [
     {
         name: 'Consultation',
         subtitle: 'Expert Guidance',
         description: "Navigating special education can be overwhelming. If you feel intimidated, confused, or unhappy with your child's experience in special education then please reach out for a free consult. We will listen to your story and give you professional advice on your next steps.",
         icon: <FaChalkboardTeacher />,
-        price: "Free 30 Min Consultation",
+        price: "Free",
+        priceClass: "'hidden'",
+        href: '#',
     },
     {
         name: 'Record Review',
@@ -15,6 +17,8 @@ const services = [
         description: "The first thing we like to do after our consultation is review your child's educational history. We will review eligibility reports, psychological reports, IEPS, progress reports, data, and all other items that are important to your child's history. This also includes any specific research for your individual case. We will then advise you on anything that is missing or could be improved.",
         icon: <AiOutlineFileSearch />,
         price: "$75/hr",
+        priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
+        href: '#',
     },
     {
         name: 'Collaboration',
@@ -22,21 +26,21 @@ const services = [
         description: "Working with us means you have a partner. Our goal is not only to support you in advocating for your child but to help you learn. We will help you understand the rules and regulations,  share ideas for appropriate IEP goals, draft communications to the school, and prepare for any upcoming meetings. We also hope to provide you with the confidence and knowledge to be your own advocate for your child.",
         icon: <GiShakingHands />,
         price: "$75/hr",
+        priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
+        priceNote: "",
+        href: '#',
     },
     {
         name: 'Attend Meetings',
         subtitle: 'Represent Your Voice',
         description: "While we think it's important to prepare you to walk into your own meetings with confidence, we also understand that sometimes you need a partner in the room with you. We are happy to be your voice and make sure the team hears your ideas, thoughts, and concerns.",
         icon: <RiTeamLine />,
-        price: "$100/hr {plus mileage 20 miles outside of 30028}",
+        price: "$100/hr",
+        priceClass: 'text-lg font-semibold leading-8 tracking-normal text-gray-500',
+        priceNote: "(plus mileage 20 miles outside of 30028)",
+        href: '#',
     },
-    {
-        name: 'Resources',
-        subtitle: 'what you need to know',
-        description: "Do you want answers to common questions regarding the special education process? Do you want to advocate for yourself but need resources? Our resource page is a great place to start! All clients will get access to this page however if you do not feel you need an advocate these resources may be a great place to start. Send an email to katie@empoweradvocacygroup.com for access.",
-        icon: <GrResources />,
-        price: "$20 unlimited access",
-    },
+
 
 
 
@@ -44,57 +48,93 @@ const services = [
 
 ]
 
+
+
+
+
+
 const Pricing = () => {
     return (
 
 
-        <section class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-            <div class="container mx-auto">
-                <div class="-mx-4 flex flex-wrap">
-                    <div class="w-full px-4">
-                        <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                            <span class="text-primary mb-2 block text-lg font-semibold">
-                                Our Services
-                            </span>
-                            <h2
-                                class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
-                                >
-                                What Do We Offer?
-                            </h2>
-                            <p class="text-body-color text-base">
-                                Expertise. Collaboration. Support.
-                            </p>
+        <div className="">
+            <div className="relative overflow-hidden pt-32 pb-96 lg:pt-40">
+                <div>
+                    <img
+                        className="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2 opacity-40"
+                        src={bg}
+                        alt=""
+                    />
+                </div>
+                <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
+                    <div className="mx-auto max-w-2xl lg:max-w-4xl">
+                        <h2 className="text-lg font-semibold leading-8 text-black">Our Services </h2>
+                        <p className="mt-2 text-4xl font-bold tracking-tight text-white">
+                            Expertise. Collaboration. Support. <br className="hidden sm:inline lg:hidden" />
+
+                        </p>
+                        <p className="mt-6 text-lg leading-8 text-black">
+                            Empower Advocacy advocates for your child to receive the services they need to be successful in school. <br /> We teach parents the tools needed to successfully advocate for their child..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="flow-root pb-32 lg:pb-40">
+                <div className="relative -mt-80">
+                    <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+                        <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
+                            {services.map((service) => (
+                                <div key={service.name} className="flex flex-col rounded-3xl bg-beige shadow-xl ring-1 ring-black/10 transform transition duration-500 hover:scale-110 hover:bg-white hover:text-gn hover:shadow-lg group pb-5">
+                                    <div className="p-8 sm:p-10">
+                                        <h3 className="text-2xl font-semibold leading-8 tracking-tight text-indigo-600" id={service.id}>
+                                            {service.icon}
+                                            {service.name}
+                                        </h3>
+                                        <h2 className="text-sm font-semibold font-italic leading-8 tracking-tight text-gray" id={service.id}>
+                                            {service.subtitle}
+                                        </h2>
+                                        <p className="mt-6 text-md bold leading-7 text-gray-600 mb-5">{service.description}</p>
+                                        <div className="absolute right-[0]  text-l tracking-widest text-white uppercase transition-opacity transform  bg-gn bg-opacity-75  bottom-0 rounded-xl  justify-center align-middle flex w-full">
+                                            <a
+                                                href={service.href}
+                                                className="inline-block w-[70%] bottom-4 absolute rounded-lg bg-gn px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700 mt-10 p-10 hover:bg-black hover:text-white"
+                                                aria-describedby={service.id}
+                                            >
+                                                Get started: &nbsp;
+                                             {service.price}
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
-                            {services.map((service) => (
-                    <div class="-mx-4 flex align-middle h-full w-full">
-                        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                            <div
-                                class="mb-8 rounded-[20px] bg-beige p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
-                                >
-
-                                {service.icon}
-                                <div
-                                    class="mb-8 flex items-center justify-center rounded-2xl w-full h-full" key={service.name}
-                                >
+                <div className="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-md lg:max-w-4xl">
+                        <div className="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
+                            <div className="lg:min-w-0 lg:flex-1">
+                                <h3 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Resources</h3>
+                                <div className="mt-2 text-base leading-7 text-gray-600">
+                                    Do you want answers to common questions regarding the special education process? Do you want to advocate for yourself but need resources? Our resource page is a great place to start! All clients will get access to this page however if you do not feel you need an advocate these resources may be a great place to start. <span className="font-semibold text-gray-900">$20 Unlimited Access</span>.
                                 </div>
-                                <h4 class="text-dark mb-3 text-xl font-semibold">
-                                    {service.name}
-                                </h4>
-                                <p class="text-body-color">
-                                    {service.description}
-                                </p>
-                                <p class="text-black">
-                                    {service.price}
-                                </p>
+                            </div>
+                            <div>
+                                <a
+                                    href="#"
+                                    className="inline-block rounded-lg bg-beige px-4 py-2.5 text-center text-sm font-semibold leading-5 text-black hover:bg-indigo-100"
+                                >
+                                    Contact Us For Details &nbsp; &nbsp; <span aria-hidden="true">&rarr;</span>
+                                </a>
                             </div>
                         </div>
-
                     </div>
-                ))}
+                </div>
             </div>
-        </section>
+        </div>
+
 
     )
 }

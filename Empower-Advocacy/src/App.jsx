@@ -18,7 +18,7 @@ function App() {
 <Hero2 />
 <Pricing />
 <About /> 
-<Services/>
+
 <Testimonials/> 
 <Contact />
 <Footer /> 

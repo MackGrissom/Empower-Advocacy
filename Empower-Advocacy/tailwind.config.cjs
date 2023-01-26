@@ -10,6 +10,8 @@ black:'black'
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+]
 }
 

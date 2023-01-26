@@ -4,7 +4,7 @@ import background from '/home/mackgrissom/code/MackGrissom/Empower-Advocacy/Empo
 const Hero2 = () => {
   return (
     <section>
-  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24  ">
+  <div class="px-4 py-10 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 h-[100vh]  ">
     <div class="flex flex-wrap items-center mx-auto max-w-7xl">
       <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
         <div>
@@ -26,14 +26,17 @@ const Hero2 = () => {
             </a>
           </div>
         {/* <span class="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase"> <span className='text-gn'> Empower Advocacy </span> </span> */}
-        <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"> <span className='text-gn'> Empowering </span>  Families To Navigate Special <span className='text-gn'>Education </span></h1>
-        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">Our mission is to empower parents to advocate for your child in the school system. Parents are often left feeling alone at the table during an IEP meeting. We help change that.</p>
+        <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl capitalize"> 
+        
+        
+        <span className='text-gn '>Empowering Families </span> As They Navigate The Journey Of Special Education </h1>
+        <p class="mb-8 text-base leading-relaxed text-left text-gray-500 capitalize">Our mission is to empower parents to advocate for your child in the school system. Parents are often left feeling alone at the table during an IEP meeting. We help change that.</p>
         <div class="mt-0 lg:mt-6 max-w-7xl sm:flex">
           <div class="mt-3 rounded-lg sm:mt-0">
             <button class="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gn">Contact Us</button>
           </div>
           <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
-            <button class="items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Learn More</button>
+            <button class="items-center block px-10 py-3.5 text-base font-medium text-center text-black transition duration-500 ease-in-out transform  shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-beige">Learn More</button>
           </div>
         </div>
       </div>
