@@ -130,7 +130,7 @@ const Pricing = () => {
                         Price: {feature.price}
                         <br/>
                         <a href={feature.href}>
-                        <button class="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform  rounded-xl hover:bg-beige hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gn mt-10" >Contact Us</button>
+                        <button className="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform  rounded-xl hover:bg-beige hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gn mt-10" >Contact Us</button>
                         </a>
                       </div>
                       <div className="lg:col-span-7">
