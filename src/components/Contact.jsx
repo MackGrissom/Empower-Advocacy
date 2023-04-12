@@ -1,23 +1,24 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_xc41irl', 'template_mi7rhqj', form.current, 'cClUurdH5EWkwTVSM')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
 
-<div id='contact'>
+ <div id='contact'>
     <div className="relative bg-beige " >
       
       <div className="absolute inset-0">
@@ -63,14 +64,14 @@ export default function Contact() {
         </div>
         <div className="bg-white py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12 bg-beige">
           <div className="mx-auto max-w-lg lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 ">
+            <form className="grid grid-cols-1 gap-y-6 " ref={form} onSubmit={sendEmail}>
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
                 </label>
                 <input
                   type="text"
-                  name="full-name"
+                  name="user_name"
                   id="full-name"
                   autoComplete="name"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -83,26 +84,14 @@ export default function Contact() {
                 </label>
                 <input
                   id="email"
-                  name="email"
+                  name="user_email"
                   type="email"
                   autoComplete="email"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Email"
                 />
               </div>
-              <div>
-                <label htmlFor="phone" className="sr-only">
-                  Phone
-                </label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  autoComplete="tel"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Phone"
-                />
-              </div>
+             
               <div>
                 <label htmlFor="message" className="sr-only">
                   Message
@@ -117,18 +106,21 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <button
+                <input
                   type="submit"
+                  value='Send'
                   className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 bg-gn "
-                >
-                  Submit
-                </button>
+                />
+                  
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    </div>
+    </div> 
   )
 }
+
+
+
