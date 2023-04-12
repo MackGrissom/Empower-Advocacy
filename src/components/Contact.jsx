@@ -9,6 +9,20 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+
+    function submitForm() {
+      // Get the first form with the name
+      // Usually the form name is not repeated
+      // but duplicate names are possible in HTML
+      // Therefore to work around the issue, enforce the correct index
+      var frm = document.getElementsByName('contact-form')[0];
+      frm.submit(); // Submit the form
+      frm.reset();  // Reset all form data
+      return false; // Prevent page refresh
+   }
+
+
+
     emailjs.sendForm('service_xc41irl', 'template_mi7rhqj', form.current, 'cClUurdH5EWkwTVSM')
       .then((result) => {
           console.log(result.text);
@@ -110,6 +124,7 @@ export default function Contact() {
                   type="submit"
                   value='Send'
                   className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 bg-gn "
+                  onclick="submitForm()"
                 />
                   
               </div>
