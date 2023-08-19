@@ -159,7 +159,7 @@ const Contact = () => {
              If you'd like to book a free 30 minutes consultation, gain access to critical resources or have any general questions - please reach out below. We look forward to hearing from you!
              </p>
 
-             <dl className="mt-1 text-base text-gray-500">
+             {/* <dl className="mt-1 text-base text-gray-500">
                <div className="mt-6">
                  <dt className="sr-only">Phone number</dt>
                  <dd className="flex">
@@ -174,7 +174,7 @@ const Contact = () => {
                    <span className="ml-3"><a href='mailto:katie@empoweradvocacygroup.com'>katie@empoweradvocacygroup.com</a></span>
                  </dd>
                </div>
-             </dl>
+             </dl> */}
              </div>
             
     <form onSubmit={handleSubmit} className="bg-beige p-6 rounded-lg shadow-md">
